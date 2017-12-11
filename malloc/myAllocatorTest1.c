@@ -39,13 +39,12 @@ int main()
     int i;
     getutime(&t1);
     for(i = 0; i < 10000; i++)
-      if (firstFitAllocRegion(4) == 0) 
+      if (bestFitAllocRegion(4) == 0) 
 	break;
     getutime(&t2);
-    printf("%d firstFitAllocRegion(4) required %f seconds\n", i, diffTimeval(&t2, &t1));
-  }
+    printf("%d bestFitAllocRegion(4) required %f seconds\n", i, diffTimeval(&t2, &t1));
+  } 
+
   return 0;
+
 }
-
-
-

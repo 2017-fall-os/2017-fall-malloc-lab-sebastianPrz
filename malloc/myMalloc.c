@@ -12,8 +12,6 @@ void *malloc(size_t NBYTES) {
   return firstFitAllocRegion(NBYTES);
 }
 
-
-
 void *realloc(void *APTR, size_t NBYTES) {
   return resizeRegion(APTR, NBYTES);
 }

@@ -14,6 +14,7 @@ typedef struct BlockSuffix_s {
 void arenaCheck(void);
 void *firstFitAllocRegion(size_t s);
 void freeRegion(void *r);
+void *resizeRegion2(void *r, size_t newSize);
 void *resizeRegion(void *r, size_t newSize);
 size_t computeUsableSpace(BlockPrefix_t *p);
 BlockPrefix_t *regionToPrefix(void *r);

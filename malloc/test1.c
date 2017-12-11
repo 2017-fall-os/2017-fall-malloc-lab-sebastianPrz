@@ -17,8 +17,6 @@ void getutime(struct timeval *t)
   *t = usage.ru_utime;
 }
 
-
-
 int main() 
 {
   void *p1, *p2, *p3;
